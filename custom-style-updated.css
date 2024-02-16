@@ -1,0 +1,45 @@
+
+/* Change background to black and text to gray, and set font to Helvetica */
+body {
+    background-color: #000;
+    color: #ccc;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+/* Round corners of the opening image */
+.apertura {
+    border-radius: 15px;
+}
+
+/* Style for the social media links - Assuming the replacement with icons would be handled elsewhere */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border-radius: 50%;
+    text-indent: -9999px;
+}
+
+/* Specific backgrounds for each social media icon */
+nav ul li a[href*="twitter.com"] { background-image: url('icons/twitter-icon.png'); }
+nav ul li a[href*="facebook.com"] { background-image: url('icons/facebook-icon.png'); }
+nav ul li a[href*="instagram.com"] { background-image: url('icons/instagram-icon.png'); }
+
+/* Place the introductory text below the social network icons */
+.introduccion {
+    margin-top: 20px;
+}
