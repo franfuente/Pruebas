@@ -1,16 +1,16 @@
-/* Cambio de fondo a negro y texto a gris casi blanco, y establecer la fuente a Helvetica */
+/* Establecer el fondo a negro, el texto a blanco, y usar la fuente Helvetica */
 body {
     background-color: #000;
-    color: #f2f2f2; /* Gris más claro, casi blanco */
+    color: #FFF; /* Blanco para mejor contraste */
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
-/* Asegurar que la imagen de apertura tenga esquinas redondeadas */
+/* Redondear las esquinas de todas las imágenes dentro de un <figure class="image"> */
 figure.image img {
-    border-radius: 15px;
+    border-radius: 15px; /* Asegura que las esquinas sean redondeadas */
 }
 
-/* Estilo para los enlaces de redes sociales - Suponiendo que el reemplazo con iconos se maneje en otro lugar */
+/* Estilo para los enlaces de redes sociales - Asumiendo iconos ya en uso */
 nav ul {
     list-style: none;
     padding: 0;
@@ -29,11 +29,11 @@ nav ul li a {
     width: 40px;
     height: 40px;
     background-size: cover;
-    border-radius: 50%;
-    text-indent: -9999px;
+    border-radius: 50%; /* Iconos redondos */
+    text-indent: -9999px; /* Oculta el texto del enlace */
 }
 
-/* Fondos específicos para cada icono de redes sociales */
+/* Fondos específicos para cada icono de redes sociales - Reemplazar URLs según sea necesario */
 nav ul li a[href*="twitter.com"] { background-image: url('icons/twitter-icon.png'); }
 nav ul li a[href*="facebook.com"] { background-image: url('icons/facebook-icon.png'); }
 nav ul li a[href*="instagram.com"] { background-image: url('icons/instagram-icon.png'); }
